@@ -130,3 +130,9 @@ let g:ctrlp_max_files = 0
 let g:ctrlp_working_path_mode = 0
 
 set wildignore+=*/node_modules/**
+
+" ======================== ADDITIONAL SCRIPTS =========================
+
+if filereadable(expand("~/.dotfiles/.vimrc_local"))
+    source ~/.dotfiles/.vimrc_local
+endif
