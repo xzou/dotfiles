@@ -8,6 +8,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'Raimondi/delimitMate'
+Plugin 'RRethy/vim-hexokinase'
 Plugin 'Yggdroot/indentLine'
 Plugin 'alvan/vim-closetag'
 Plugin 'easymotion/vim-easymotion'
@@ -130,6 +131,13 @@ let g:ctrlp_max_files = 0
 let g:ctrlp_working_path_mode = 0
 
 set wildignore+=*/node_modules/**
+
+
+" ---------------------------- Hexokinase -----------------------------
+set h 'termguicolors'
+let g:Hexokinase_highlighters = ['foreground']
+let g:Hexokinase_ftEnabled = ['css', 'scss', 'html', 'javascript', 'soy']
+
 
 " ======================== ADDITIONAL SCRIPTS =========================
 
